@@ -1,6 +1,9 @@
 *.user
 *.[ao]
 *.so
+*.dll
+*.exe
+moc_*.cpp
 debug
 release
 [Mm]akefile*
@@ -11,7 +14,11 @@ release
 lib
 *.pdb
 *.obj
+*.moc
+object_script.*
+pch.h.gch/
 callgrind.*
+qrc_*.cpp
 examples/clientbench/clientbench
 examples/clientbench/clientbenchd
 examples/declarative/declarative
