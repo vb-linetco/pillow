@@ -39,5 +39,4 @@ msvc: {
 		!pillow_static: PILLOWCORE_LIB_FILE = lib$${PILLOWCORE_LIB_NAME}.so
 		pillow_static: PILLOWCORE_LIB_FILE = lib$${PILLOWCORE_LIB_NAME}.a
 	}
-	QMAKE_CXXFLAGS += --std=c++11
 }
