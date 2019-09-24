@@ -9,6 +9,10 @@ QT       -= gui
 
 CONFIG   += precompile_header
 
+!msvc {
+	QMAKE_CXXFLAGS += --std=c++11
+}
+
 PRECOMPILED_HEADER = pch.h
 
 DEPENDPATH = .
@@ -58,4 +62,4 @@ HEADERS += \
 	PillowCore.h
 
 OTHER_FILES += \
-    pillowcore.qbs
+	pillowcore.qbs

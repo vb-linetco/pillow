@@ -7,6 +7,9 @@ CONFIG   += console precompile_header
 CONFIG   -= app_bundle
 
 PRECOMPILED_HEADER = pch.h
+!msvc {
+	QMAKE_CXXFLAGS += --std=c++11
+}
 
 INCLUDEPATH = . ../pillowcore
 DEPENDPATH = . ../pillowcore
@@ -35,4 +38,4 @@ HEADERS += \
 RESOURCES += tests.qrc
 
 OTHER_FILES += \
-    tests.qbs
+	tests.qbs
